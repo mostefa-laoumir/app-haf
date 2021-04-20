@@ -15,4 +15,6 @@
     <color name="hafezni_Teal">#77C0C0</color>
     <color name="hafezni_Light_Green">#6FCF97</color>
     <color name="hafezni_light_gray">#c1c3c6</color>
+    <color name="hafezni_light_gray_background">#fafafa</color>
+
 </resources>
