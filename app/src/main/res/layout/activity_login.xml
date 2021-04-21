@@ -35,40 +35,43 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
         android:layout_marginTop="31dp"
+        android:background="@drawable/input_login"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
         android:ems="10"
         android:inputType="textPassword"
-        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        android:drawableLeft="@drawable/ic_baseline_vpn_key_24" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/"
-        android:drawableStart="@drawable/ic_baseline_group_24"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/input_login"
+        android:drawableStart="@drawable/ic_baseline_group_24"
+        android:drawableLeft="@drawable/ic_baseline_group_24"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:drawableLeft="@drawable/ic_baseline_group_24" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
         android:layout_marginTop="24dp"
-        android:text="Button"
+        android:background="@drawable/login_button"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:rippleColor="@color/teal_200" />
 
     <TextView
         android:id="@+id/textView2"
