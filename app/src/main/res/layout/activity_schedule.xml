@@ -4,6 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Schedule">
+    android:background="@color/hafezni_dark"
+
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/navbar_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/im2"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/im2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/navbar_button_activated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/im4"
+        app:srcCompat="@drawable/time_activated" />
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/navbar_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/message" />
+
+    <ImageView
+        android:id="@+id/im4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/navbar_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/im3"
+        app:srcCompat="@drawable/bell" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
