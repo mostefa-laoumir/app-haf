@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Hafezni</string>
     <string name="how_mot">How Motivated are you today?</string>
+    <string name="congrats_text">Congrats you have won a T-Shirt and an online course. Check the link bellow to claim your gifts</string>
+    <string name="attention_text">here is the link for the meeting of MR.Ouared which will take place today at 9:30PM</string>
+    <string name="motivation_text">Hey there, we noticed that you are making a progress, keep up the good work! and don"t forget your homeworks;)</string>
+    <string name="congrats_link">https://hafezni.dz/prize/UJK94dy78kl</string>
+    <string name="attention_link">https://meet.google.com/mjb-wwvi-yup</string>
 </resources>
