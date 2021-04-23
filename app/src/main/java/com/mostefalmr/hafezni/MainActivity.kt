@@ -1,73 +1,51 @@
 package com.mostefalmr.hafezni
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import kotlinx.android.synthetic.main.module_ticket.view.*
 
 
 class MainActivity : AppCompatActivity() {
+    var moduleList = ArrayList<ModuleModel>()
+    var adapter:ModuleAdapter?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        moduleList.add(ModuleModel("Engeneering",14.0))
 
 
     }
 
-    inner class AnimalAdapter: BaseAdapter {
-        var animalList = ArrayList<ModuleModel>()
+    inner class ModuleAdapter: BaseAdapter {
+        var moduleLis = ArrayList<ModuleModel>()
         var context: Context?= null
-        constructor(context: Context, animalList :ArrayList<ModuleModel>):super(){
-            this.animalList=animalList
+        constructor(context: Context, Modules :ArrayList<ModuleModel>):super(){
+            this.moduleLis=Modules
             this.context = context
         }
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-            val animal = animalList[position]
+            val module = moduleList[position]
             var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            if(animal.isKiller==true){
-                var myView = inflater.inflate(R.layout.animal_killer_ticket,null)
-                myView.=animal.name!!
-                myView.ivAnimal.setImageResource(animal.image!!)
-                myView.tvDescription.text = animal.des!!
-                myView.ivAnimal.setOnClickListener{
-                    val intent = Intent(context, Main2Activity::class.java)
-                    intent.putExtra("name",animal.name!!)
-                    intent.putExtra("des",animal.des!!)
-                    intent.putExtra("image",animal.image!!)
-                    context!!.startActivity(intent)
-                }
-                myView.ivDel.setOnClickListener{
-                    delete(position)
-                }
+
+                var myView = inflater.inflate(R.layout.module_ticket, null)
+                myView.moduleID.text = module.name!!
+                myView.percentageID.text = module.percentage.toString()
 
                 return myView
 
-            }else{
-                var myView = inflater.inflate(R.layout.animal_ticket,null)
-                myView.tvNamee.text=animal.name!!
-                myView.ivAnimal.setImageResource(animal.image!!)
-                myView.tvDescription.text = animal.des!!
-                myView.ivAnimal.setOnClickListener{
-                    val intent = Intent(context, Main2Activity::class.java)
-                    intent.putExtra("name",animal.name!!)
-                    intent.putExtra("des",animal.des!!)
-                    intent.putExtra("image",animal.image!!)
-                    context!!.startActivity(intent)
 
-                }
-                myView.ivDel.setOnClickListener {
-                    delete(position)
-                }
-                return myView
-            }
+
 
         }
 
         override fun getItem(position: Int): Any {
-            return animalList[position]
+            return moduleLis[position]
         }
 
         override fun getItemId(position: Int): Long {
@@ -75,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getCount(): Int {
-            return animalList.size
+            return moduleLis.size
         }
 
     }
