@@ -27,11 +27,11 @@
             android:orientation="vertical">
 
             <ListView
-                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
                 android:id="@+id/MessagesListView"
-
-                android:layout_width="381dp"
+                android:layout_width="333dp"
                 android:layout_height="603dp"
+                android:layout_marginLeft="15dp"
                 android:layout_marginTop="216dp"
                 android:background="@color/hafezni_dark"
                 android:divider="@android:color/transparent"

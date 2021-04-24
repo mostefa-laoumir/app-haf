@@ -13,11 +13,11 @@
         android:id="@+id/imageView5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
         android:background="@drawable/notif_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.067"
         app:srcCompat="@drawable/notif" />
@@ -52,7 +52,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="140dp"
         android:text="''Hold the vision, Trust the process''"
         android:textColor="@color/hafezni_Gold"
         android:textSize="20dp"
@@ -63,26 +63,29 @@
 
     <ListView
         android:id="@+id/modulesList"
+        android:layout_width="339dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/hafezni_dark"
         android:divider="@android:color/transparent"
         android:dividerHeight="10dp"
-        android:layout_width="373dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="216dp"
-        android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/averageList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ListView
         android:id="@+id/averageList"
-        android:layout_width="363dp"
-        android:layout_height="139dp"
-        android:layout_marginTop="448dp"
+        android:layout_width="340dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="492dp"
+        android:layout_marginBottom="22dp"
         android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/im2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

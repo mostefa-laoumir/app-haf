@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginRight="10dp"
     android:orientation="horizontal"
     android:layout_height="180dp">
 
@@ -26,6 +25,7 @@
             android:id="@+id/ownerIDSend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="28dp"
@@ -67,5 +67,6 @@
 
 
     </LinearLayout>
+
 
 </LinearLayout>

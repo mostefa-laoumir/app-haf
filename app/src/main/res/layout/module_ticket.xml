@@ -1,70 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:paddingVertical="20dp"
     android:layout_marginVertical="50dp"
     android:background="@drawable/module_ticket_bg"
     android:layout_height="200dp">
 
     <ImageView
+        android:layout_marginLeft="20dp"
         android:id="@+id/moduleRankImage"
         android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486"
+        android:layout_marginRight="20dp"
         app:srcCompat="@drawable/boiled"
-        android:layout_marginEnd="60dp" />
+ />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
-    <TextView
+
+        <TextView
+            android:id="@+id/percentageID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="15%"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:textColor="@color/hafezni_Red"
+            android:layout_marginTop="10dp"
+             />
+
+        <TextView
         android:id="@+id/moduleID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginLeft="128dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
 
         android:text="Software Engineering"
         android:textColor="@color/white"
-        android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        android:textSize="17dp"
+        />
 
-    <ProgressBar
-        android:id="@+id/pbID"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="235dp"
-        android:layout_height="17dp"
-        android:layout_marginLeft="10dp"
-        android:max="100"
-        android:min="0"
-        android:progressBackgroundTint="@color/hafezni_dark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        <ProgressBar
+            android:id="@+id/pbID"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="50dp"
+            android:layout_marginBottom="30dp"
+            android:max="100"
+            android:min="0"
+            android:progressBackgroundTint="@color/hafezni_dark" />
 
-    <TextView
-        android:id="@+id/percentageID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="15%"
-        android:textColor="@color/hafezni_Red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.883"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
