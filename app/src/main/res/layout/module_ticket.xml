@@ -4,19 +4,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingVertical="20dp"
     android:background="@drawable/module_ticket_bg"
-    android:layout_height="150dp">
+    android:layout_height="200dp">
 
     <ImageView
         android:id="@+id/moduleRankImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginRight="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/boiled" />
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@drawable/boiled"
+        android:layout_marginEnd="60dp" />
 
     <TextView
         android:id="@+id/moduleID"
@@ -24,34 +28,40 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="120dp"
         android:layout_marginLeft="120dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="40dp"
+
         android:text="Software Engineering"
         android:textColor="@color/white"
         android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
 
     <ProgressBar
         android:id="@+id/pbID"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="235dp"
-        android:progressBackgroundTint="@color/hafezni_dark"
+        android:layout_marginLeft="10dp"
         android:layout_height="17dp"
-        android:layout_marginBottom="44dp"
+        android:progressBackgroundTint="@color/hafezni_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.704"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
 
     <TextView
         android:id="@+id/percentageID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
         android:text="15%"
         android:textColor="@color/hafezni_Red"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
 </androidx.constraintlayout.widget.ConstraintLayout>

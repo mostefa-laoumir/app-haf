@@ -62,8 +62,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="340dp"
-        android:layout_height="226dp"
+        android:id="@+id/modulesList"
+        android:layout_width="373dp"
+        android:layout_height="204dp"
         android:layout_marginTop="236dp"
         android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
@@ -73,8 +74,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="338dp"
-        android:layout_height="124dp"
+        android:layout_width="420dp"
+        android:layout_height="117dp"
         android:layout_marginTop="480dp"
         android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
