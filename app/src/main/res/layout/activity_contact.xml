@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/hafezni_lighterDark"
+    android:background="@color/hafezni_dark"
     tools:context=".Contact">
 
     <LinearLayout
@@ -26,17 +26,33 @@
             android:gravity="bottom"
             android:orientation="vertical">
 
+            <ListView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/MessagesListView"
+                android:layout_width="381dp"
+                android:layout_height="603dp"
+                android:layout_marginTop="216dp"
+                android:background="@color/hafezni_dark"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="20dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/messageID"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/edit_round"
-                android:drawableRight="@drawable/msgicon"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionSend"
                 android:ems="10"
-
                 android:hint="Write"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
