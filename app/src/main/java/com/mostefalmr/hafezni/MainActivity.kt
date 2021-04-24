@@ -2,6 +2,7 @@ package com.mostefalmr.hafezni
 
 import android.animation.ValueAnimator
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     var adapter:ModuleAdapter?=null
     var average2 = ArrayList<ModuleModel>()
     var adapter2:ModuleAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -33,12 +35,25 @@ class MainActivity : AppCompatActivity() {
         moduleList.add(ModuleModel("Reseaux et Telecom", 92.0))
         adapter = ModuleAdapter(this, moduleList)
         modulesList.adapter = adapter
-        
         average2.add(ModuleModel("Average",70.0))
         adapter2= ModuleAdapter(this, average2)
         averageList.adapter = adapter2
 
+        im2.setOnClickListener {
+            var intent = Intent(this,Schedule::class.java)
+            startActivity(intent)
 
+        }
+        im4.setOnClickListener {
+            var intent = Intent(this,Anouncements::class.java)
+            startActivity(intent)
+
+        }
+        im3.setOnClickListener {
+            var intent = Intent(this,Contact::class.java)
+            startActivity(intent)
+
+        }
 
     }
 

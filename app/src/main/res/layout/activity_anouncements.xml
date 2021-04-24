@@ -59,8 +59,8 @@
         app:srcCompat="@drawable/bell_activated" />
 
     <ListView
-        android:layout_width="413dp"
-        android:layout_height="637dp"
+        android:layout_width="407dp"
+        android:layout_height="459dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

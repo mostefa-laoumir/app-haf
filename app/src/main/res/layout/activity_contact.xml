@@ -14,23 +14,17 @@
         tools:layout_editor_absoluteX="206dp"
         tools:layout_editor_absoluteY="163dp">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton3"
-            android:layout_width="38dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/abc_vector_test" />
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/back" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="bottom">
-
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="66dp"
-                android:layout_height="80dp"
-                app:srcCompat="@drawable/chat" />
+            android:gravity="bottom"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/editTextTextPersonName2"
@@ -40,7 +34,9 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/edit_round"
+                android:drawableRight="@drawable/msgicon"
                 android:ems="10"
+
                 android:hint="Write"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
