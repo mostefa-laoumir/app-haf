@@ -1,6 +1,7 @@
 package com.mostefalmr.hafezni
 
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.*
@@ -56,6 +57,12 @@ class Contact : AppCompatActivity() {
             false
         })
 
+        backArrow.setOnClickListener {
+            var intent = Intent(this, MainActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+
     }
 
     inner class MessageAdapter: BaseAdapter {
@@ -80,7 +87,6 @@ class Contact : AppCompatActivity() {
                 return myView
 
             }else{
-
                 var myView = inflater.inflate(R.layout.sender_ticket, null)
                 myView.messageIDSend.text = msg.message
                 myView.ownerIDSend.text = msg.owner

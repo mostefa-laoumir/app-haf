@@ -7,6 +7,7 @@
     android:background="@color/hafezni_dark"
 
 
+
     tools:context=".MainActivity">
 
 
@@ -17,17 +18,20 @@
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
         android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button"
+        android:background="@drawable/navbar_button_activated"
+        android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/im2"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_activated" />
 
     <ImageView
         android:id="@+id/im2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/navbar_button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,17 +54,20 @@
         android:id="@+id/im4"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button_activated"
+        android:background="@drawable/navbar_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/im3"
-        app:srcCompat="@drawable/bell_activated" />
+        app:srcCompat="@drawable/bell" />
 
     <ListView
-        android:layout_width="407dp"
-        android:layout_height="459dp"
+        android:id="@+id/announcmentsListView"
+        android:layout_width="342dp"
+        android:layout_height="588dp"
+        android:dividerHeight="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/im2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

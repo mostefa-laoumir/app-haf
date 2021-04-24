@@ -15,9 +15,9 @@
         tools:layout_editor_absoluteY="163dp">
 
         <ImageView
-            android:id="@+id/imageButton3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/backArrow"
+            android:layout_width="37dp"
+            android:layout_height="45dp"
             app:srcCompat="@drawable/back" />
 
         <LinearLayout

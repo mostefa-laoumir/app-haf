@@ -41,16 +41,19 @@ class MainActivity : AppCompatActivity() {
 
         im2.setOnClickListener {
             var intent = Intent(this,Schedule::class.java)
+            finish()
             startActivity(intent)
 
         }
         im4.setOnClickListener {
             var intent = Intent(this,Anouncements::class.java)
+            finish()
             startActivity(intent)
 
         }
         im3.setOnClickListener {
             var intent = Intent(this,Contact::class.java)
+            finish()
             startActivity(intent)
 
         }

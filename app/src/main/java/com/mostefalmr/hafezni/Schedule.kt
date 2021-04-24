@@ -12,18 +12,20 @@ class Schedule : AppCompatActivity() {
 
         im1.setOnClickListener {
             var intent = Intent(this,MainActivity::class.java)
+            finish()
             startActivity(intent)
 
         }
         im4.setOnClickListener {
             var intent = Intent(this,Anouncements::class.java)
+            finish()
             startActivity(intent)
 
         }
         im3.setOnClickListener {
             var intent = Intent(this,Contact::class.java)
+            finish()
             startActivity(intent)
-
         }
     }
 }
