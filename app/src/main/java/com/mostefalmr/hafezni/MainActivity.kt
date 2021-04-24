@@ -23,6 +23,8 @@ import kotlinx.android.synthetic.main.module_ticket.view.*
 class MainActivity : AppCompatActivity() {
     var moduleList = ArrayList<ModuleModel>()
     var adapter:ModuleAdapter?=null
+    var average2 = ArrayList<ModuleModel>()
+    var adapter2:ModuleAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         moduleList.add(ModuleModel("Reseaux et Telecom", 92.0))
         adapter = ModuleAdapter(this, moduleList)
         modulesList.adapter = adapter
-
+        
+        average2.add(ModuleModel("Average",70.0))
+        adapter2= ModuleAdapter(this, average2)
+        averageList.adapter = adapter2
 
 
 
@@ -46,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
         @RequiresApi(Build.VERSION_CODES.O)
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-            val module = moduleList[position]
+            val module = moduleLis[position]
             var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
                 var myView = inflater.inflate(R.layout.module_ticket, null)
@@ -70,6 +75,7 @@ class MainActivity : AppCompatActivity() {
                     myView.percentageID.setTextColor(ContextCompat.getColor(context!!, R.color.hafezni_Teal))
 
                 }
+
             myView.pbID.setProgress(module.percentage!!.toInt(), true)
 
 

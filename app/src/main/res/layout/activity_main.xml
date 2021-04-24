@@ -52,7 +52,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="164dp"
         android:text="''Hold the vision, Trust the process''"
         android:textColor="@color/hafezni_Gold"
         android:textSize="20dp"
@@ -63,24 +63,26 @@
 
     <ListView
         android:id="@+id/modulesList"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
         android:layout_width="373dp"
         android:layout_height="204dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="216dp"
         android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="420dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="480dp"
+        android:id="@+id/averageList"
+        android:layout_width="363dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="448dp"
         android:background="@color/hafezni_dark"
         android:outlineAmbientShadowColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
