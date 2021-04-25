@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logohafezni"
+        android:icon="@drawable/applogohafezni"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logohafezni"
+        android:roundIcon="@drawable/applogohafezni"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hafezni">
         <activity android:name=".Mood"></activity>
