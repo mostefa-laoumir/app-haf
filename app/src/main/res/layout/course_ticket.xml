@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/hafezni_dark"
+    android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:orientation="vertical"
+        android:background="@drawable/time_layout_bg"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_margin="15dp"
+            android:id="@+id/timeStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:00"
+            android:textColor="@color/hafezni_Teal"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/timeEnd"
+            android:layout_margin="15dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:30" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:minWidth="250dp"
+        android:background="@drawable/course_bg_unselected"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/courseID"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Software Engineering"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ClassroomID"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Theatre C"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
