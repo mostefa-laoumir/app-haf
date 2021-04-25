@@ -4,24 +4,25 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logohafezni"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logohafezni"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hafezni">
         <activity android:name=".Mood"></activity>
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".Login" />
-        <activity android:name=".Contact" />
-        <activity android:name=".Anouncements" />
-        <activity android:name=".Schedule" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Contact" />
+        <activity android:name=".Anouncements" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".MainActivity"/>
+
     </application>
 
 </manifest>
