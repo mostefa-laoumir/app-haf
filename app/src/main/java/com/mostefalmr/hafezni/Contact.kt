@@ -51,6 +51,7 @@ class Contact : AppCompatActivity() {
                     )
                 )
                 adapter!!.notifyDataSetChanged()
+                messageID.text.clear()
 
                 return@OnKeyListener true
             }
