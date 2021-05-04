@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mostefalmr.hafezni">
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/applogohafezni"
@@ -9,8 +11,11 @@
         android:roundIcon="@drawable/applogohafezni"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hafezni">
-        <activity android:name=".Mood"></activity>
-        <activity android:name=".SplashScreen" >
+        <activity android:name=".TodolistActivity">
+
+        </activity>
+        <activity android:name=".Mood" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +26,11 @@
         <activity android:name=".Contact" />
         <activity android:name=".Anouncements" />
         <activity android:name=".Schedule" />
-        <activity android:name=".MainActivity"/>
-        <service android:name=".WidgetService" android:enabled="true"/>
+        <activity android:name=".MainActivity" />
 
+        <service
+            android:name=".WidgetService"
+            android:enabled="true" />
     </application>
-    
 
 </manifest>

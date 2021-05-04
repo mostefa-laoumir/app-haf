@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         app:srcCompat="@drawable/boiled"
- />
+        />
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="vertical"
@@ -34,19 +34,19 @@
             android:layout_gravity="right"
             android:textColor="@color/hafezni_Red"
             android:layout_marginTop="10dp"
-             />
+            />
 
         <TextView
-        android:id="@+id/moduleID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="20dp"
+            android:id="@+id/moduleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
 
-        android:text="Software Engineering"
-        android:textColor="@color/white"
-        android:textSize="17dp"
-        />
+            android:text="Software Engineering"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            />
 
         <ProgressBar
             android:id="@+id/pbID"

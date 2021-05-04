@@ -10,8 +10,8 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         button.setOnClickListener{
-            if(editTextTextPersonName.text.toString()=="998877" && editTextTextPassword.text.toString()=="123"){
-                var intent = Intent(this, Mood::class.java)
+            if(editTextTextPersonName.text.toString()=="" && editTextTextPassword.text.toString()==""){
+                var intent = Intent(this, TodolistActivity::class.java)
                 finish()
                 startActivity(intent)
             }
