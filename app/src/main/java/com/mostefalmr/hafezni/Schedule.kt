@@ -98,13 +98,13 @@ class Schedule : AppCompatActivity() {
 
         }
         im4.setOnClickListener {
-            var intent = Intent(this, Anouncements::class.java)
+            var intent = Intent(this, TodolistActivity::class.java)
             finish()
             startActivity(intent)
 
         }
         im3.setOnClickListener {
-            var intent = Intent(this, Contact::class.java)
+            var intent = Intent(this, Challenge::class.java)
             finish()
             startActivity(intent)
         }

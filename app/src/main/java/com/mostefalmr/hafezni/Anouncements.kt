@@ -37,24 +37,13 @@ class Anouncements : AppCompatActivity() {
 
 
         var intent:Intent
-        im1.setOnClickListener {
+        backk.setOnClickListener {
              intent = Intent(this,MainActivity::class.java)
             finish()
             startActivity(intent)
 
         }
-        im2.setOnClickListener {
-             intent = Intent(this,Schedule::class.java)
-            finish()
-            startActivity(intent)
 
-        }
-        im3.setOnClickListener {
-            intent = Intent(this,Contact::class.java)
-            finish()
-            startActivity(intent)
-
-        }
 
 
 

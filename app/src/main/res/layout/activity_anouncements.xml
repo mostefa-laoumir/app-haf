@@ -11,66 +11,30 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/im1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button"
-        android:paddingLeft="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/im2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
-
-    <ImageView
-        android:id="@+id/im2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/im4"
-        app:srcCompat="@drawable/sched" />
-
-    <ImageView
-        android:id="@+id/im3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/message" />
-
-    <ImageView
-        android:id="@+id/im4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button_activated"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/im3"
-        app:srcCompat="@drawable/bell_activated" />
-
     <ListView
         android:id="@+id/announcmentsListView"
-        android:layout_width="382dp"
-        android:layout_height="578dp"
+        android:layout_width="372dp"
+        android:layout_height="518dp"
         android:dividerHeight="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/im2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <ImageView
+        android:id="@+id/backk"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/announcmentsListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

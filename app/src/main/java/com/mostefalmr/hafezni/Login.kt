@@ -11,7 +11,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         button.setOnClickListener{
             if(editTextTextPersonName.text.toString()=="" && editTextTextPassword.text.toString()==""){
-                var intent = Intent(this, TodolistActivity::class.java)
+                var intent = Intent(this, ReasonForStudyActivity::class.java)
                 finish()
                 startActivity(intent)
             }

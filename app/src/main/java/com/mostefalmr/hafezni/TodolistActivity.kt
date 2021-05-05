@@ -46,6 +46,11 @@ class TodolistActivity : AppCompatActivity(), QuantityDialog.QuantityDialogListe
         val day =Calendar.DAY_OF_WEEK
         val day1=Calendar.DAY_OF_MONTH
 
+        back.setOnClickListener {
+            var intent = Intent(this, MainActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
         d.text = day.toString()
         textView13.text = "$month $day"
         if(day==1){

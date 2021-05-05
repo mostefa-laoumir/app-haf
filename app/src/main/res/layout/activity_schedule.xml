@@ -11,12 +11,24 @@
 
 
     <ImageView
+        android:id="@+id/im4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/navbar_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/im3"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
         android:id="@+id/im1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="44dp"
         android:layout_marginRight="44dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/navbar_button"
         android:paddingLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,9 +41,9 @@
         android:id="@+id/im2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/navbar_button_activated"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/im4"
@@ -41,30 +53,18 @@
         android:id="@+id/im3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/navbar_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/message" />
-
-    <ImageView
-        android:id="@+id/im4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="28dp"
-        android:background="@drawable/navbar_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/im3"
-        app:srcCompat="@drawable/bell" />
+        app:srcCompat="@drawable/trophee" />
 
     <ListView
         android:id="@+id/coursesListView"
-        android:layout_width="347dp"
-        android:layout_height="420dp"
+        android:layout_width="345dp"
+        android:layout_height="387dp"
         android:layout_marginBottom="8dp"
         android:dividerHeight="-1dp"
         app:layout_constraintBottom_toTopOf="@+id/im2"

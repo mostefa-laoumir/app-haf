@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         var img: ImageView = findViewById(R.id.imageView5)
         getPermission()
-        img.setOnClickListener(object : View.OnClickListener {
+        nameID.setOnClickListener(object : View.OnClickListener {
             @RequiresApi(Build.VERSION_CODES.M)
             override fun onClick(v: View?) {
                 if (!Settings.canDrawOverlays(this@MainActivity)) {
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         im4.setOnClickListener {
-            var intent = Intent(this, Anouncements::class.java)
+            var intent = Intent(this, TodolistActivity::class.java)
             finish()
             startActivity(intent)
 
@@ -72,6 +72,16 @@ class MainActivity : AppCompatActivity() {
             finish()
             startActivity(intent)
 
+        }
+        im99.setOnClickListener {
+            var intent = Intent(this, Challenge::class.java)
+            finish()
+            startActivity(intent)
+        }
+        img.setOnClickListener {
+            var intent = Intent(this, Anouncements::class.java)
+            finish()
+            startActivity(intent)
         }
 
     }

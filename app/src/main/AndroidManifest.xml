@@ -11,9 +11,10 @@
         android:roundIcon="@drawable/applogohafezni"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hafezni">
-        <activity android:name=".TodolistActivity">
-
-        </activity>
+        <activity android:name=".RankActivity"></activity>
+        <activity android:name=".ReasonForStudyActivity" />
+        <activity android:name=".Challenge" />
+        <activity android:name=".TodolistActivity" />
         <activity android:name=".Mood" />
         <activity android:name=".SplashScreen">
             <intent-filter>

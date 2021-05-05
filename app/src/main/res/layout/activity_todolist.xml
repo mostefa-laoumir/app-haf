@@ -278,32 +278,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="97dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/tth"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/todaybutton" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="24dp"
-        android:text="Apr 25"
-        android:textColor="@color/hafezni_light_gray"
-        android:textSize="12dp"
-        app:layout_constraintStart_toEndOf="@+id/d"
-        app:layout_constraintTop_toTopOf="@+id/textView12" />
-
     <TextView
         android:id="@+id/d"
         android:layout_width="wrap_content"
@@ -316,17 +290,30 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.968" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Apr 25"
+        android:textColor="@color/hafezni_light_gray"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/d"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="53dp"
         android:text="Tue"
@@ -335,7 +322,7 @@
         app:layout_constraintBottom_toTopOf="@+id/mm"
         app:layout_constraintStart_toEndOf="@+id/d"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.953" />
 
     <TextView
         android:id="@+id/textView7"
@@ -377,4 +364,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tasksListuncomp"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>
