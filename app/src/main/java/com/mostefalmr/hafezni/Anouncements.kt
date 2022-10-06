@@ -48,6 +48,7 @@ class Anouncements : AppCompatActivity() {
 
 
 
+    //WORK WITH USER LOCATION
 
     }
 
