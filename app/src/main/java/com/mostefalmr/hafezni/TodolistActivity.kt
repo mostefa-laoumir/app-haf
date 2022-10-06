@@ -19,6 +19,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
+
 class TodolistActivity : AppCompatActivity(), QuantityDialog.QuantityDialogListenner {
     var taskTodoList = ArrayList<CheckboxModel>()
     var taskdoneList = ArrayList<CheckboxModel>()

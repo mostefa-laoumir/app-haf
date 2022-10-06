@@ -9,6 +9,8 @@ class Challenge : AppCompatActivity() {
     var i = 0
     var questions=ArrayList<String>()
 
+    //asking the real questions here
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_challenge)
